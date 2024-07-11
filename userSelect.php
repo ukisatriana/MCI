@@ -1,7 +1,7 @@
 <?php
 include 'connection.php';
 
-$sql = "SELECT nik, nama, section, division, test_type, score from user";
+$sql = "SELECT nik, nama, section, division, test_type, score from historical_test";
 $result = mysqli_query($conn, $sql);
 
 if mysqli_num_rows($result) > 0 {
